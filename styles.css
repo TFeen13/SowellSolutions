@@ -125,6 +125,20 @@ p {
   font-size: 17px;
 }
 
+.link-header-banner {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--soft-blue);
+}
+
+.link-header-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 #about p {
   max-width: 900px;
 }
