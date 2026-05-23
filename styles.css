@@ -262,6 +262,14 @@ p {
   display: grid;
 }
 
+.service-slide-reverse .service-image {
+  order: 2;
+}
+
+.service-slide-reverse .service-content {
+  order: 1;
+}
+
 .service-image {
   background: var(--blue-gray);
   min-height: 540px;
