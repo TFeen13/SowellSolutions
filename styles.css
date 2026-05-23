@@ -47,7 +47,7 @@ header {
   display: block;
   width: min(360px, 78vw);
   height: auto;
-  margin: 0 auto -22px;
+  margin: 0 auto 18px;
 }
 
 .hero-kicker {
