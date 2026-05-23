@@ -236,7 +236,46 @@
   </section>
 
   <footer>
-    &copy; 2026 Sowell Solutions. All rights reserved.
-  </footer>
+  &copy; 2026 Sowell Solutions. All rights reserved.
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.service-slide');
+  const dots = document.querySelectorAll('.slider-dot');
+  let currentSlide = 0;
+  let slideTimer;
+
+  function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove('active'));
+    dots.forEach((dot) => dot.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex);
+  }
+
+  function startSlider() {
+    slideTimer = setInterval(nextSlide, 6500);
+  }
+
+  function resetSliderTimer() {
+    clearInterval(slideTimer);
+    startSlider();
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+      resetSliderTimer();
+    });
+  });
+
+  startSlider();
+</script>
 </body>
 </html>
