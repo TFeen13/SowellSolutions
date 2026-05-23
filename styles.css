@@ -33,9 +33,37 @@ header {
       rgba(200, 220, 230, 0.9)
     );
   color: var(--deep-teal);
-  padding: 96px 24px 88px;
+  padding: 72px 24px 64px;
   text-align: center;
   border-bottom: 1px solid rgba(0, 47, 58, 0.12);
+}
+
+.hero-inner {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  display: block;
+  width: min(520px, 88vw);
+  height: auto;
+  margin: 0 auto 28px;
+}
+
+.hero-kicker {
+  margin: 0 0 18px;
+  color: var(--deep-teal);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--charcoal);
 }
 
 header h1 {
@@ -173,7 +201,17 @@ footer {
 
 @media screen and (max-width: 700px) {
   header {
-    padding: 72px 20px 64px;
+    padding: 48px 20px 44px;
+  }
+
+  .hero-logo {
+    width: min(360px, 92vw);
+    margin-bottom: 22px;
+  }
+
+  .hero-kicker {
+    font-size: 14px;
+    letter-spacing: 2px;
   }
 
   nav a {
