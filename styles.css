@@ -530,12 +530,15 @@ p {
 }
 
 .contact-box .section-label {
+  display: block;
+  width: 100%;
   color: var(--blue-gray);
-  margin: 0 0 14px;
+  margin: 0 auto 14px;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.6px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .contact-box h2 {
