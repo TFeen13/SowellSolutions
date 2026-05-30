@@ -911,6 +911,36 @@ p {
   color: var(--blue-gray);
 }
 
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.footer-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  opacity: 0.78;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social-icons a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.footer-social-icons img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .footer-bottom {
   max-width: 1180px;
   margin: 46px auto 0;
